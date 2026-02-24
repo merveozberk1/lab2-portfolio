@@ -3,78 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merve Özberk - Kişisel Portfolyo</title>
+    <title>Merve Özberk - Kisisel Portfolyo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+    <a href="#main-content" class="skip-link">Ana icerige atla</a>
 
     <header>
-        <h1>Merve Özberk - Kişisel Portfolyo</h1>
+        <h1>Merve Özberk - Kisisel Portfolyo</h1>
         <nav aria-label="Ana navigasyon">
             <ul>
-                <li><a href="#hakkimda">Hakkımda</a></li>
+                <li><a href="#hakkimda">Hakkimda</a></li>
                 <li><a href="#projeler">Projeler</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
+                <li><a href="#iletisim">Iletisim</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-content">
-        
         <section id="hakkimda">
-            <h2>Hakkımda</h2>
-
+            <h2>Hakkimda</h2>
             <figure>
-                <img src="profil.jpg" alt="Merve Özberk profil fotoğrafı" />
+                <img src="profil.jpg" alt="Merve Özberk'in vesikalik fotografi" />
                 <figcaption>Merve Özberk</figcaption>
             </figure>
-
-            <p>
-                Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim.
-                Backend ve web geliştirme alanlarına ilgi duyuyorum.
-                Java, C# ve React ile projeler geliştiriyor; 
-                algoritma ve veri yapıları konularında kendimi geliştirmeye devam ediyorum.
-            </p>
-
-            <h3>Kullandığım Teknolojiler</h3>
+            <p>Merhaba, ben Merve Özberk .Yazılım Mühendisliği  öğrencisiyim. İlgilendiğim alanlar ve teknolojiler şunlar:</p>
             <ul>
-                <li>Java</li>
-                <li>C#</li>
-                <li>React</li>
-                <li>HTML & CSS</li>
-                <li>Git & GitHub</li>
+                <li>Web Tasarımı ve Programlama</li>
+                <li>HTML5, CSS3 ve Semantik Web</li>
+                <li>Erişilebilirlik (a11y) ve Kullanıcı Deneyimi</li>
+                <li>Git ve Versiyon Kontrol Sistemleri</li>
             </ul>
         </section>
 
         <section id="projeler">
             <h2>Projelerim</h2>
-
+            
             <article>
-                <h3>Film & Dizi Arşiv Web Uygulaması</h3>
-                <img src="filmproje.jpg" alt="Film ve dizi arşiv web uygulaması ekran görüntüsü" />
-                <p>
-                    Kullanıcıların film ve dizileri kategorize edebildiği,
-                    ruh haline göre öneri sunan React tabanlı web projesi.
-                </p>
+                <h3>Kişisel Portföy Sitesi</h3>
+                <img src="portfolio.jpg" alt="Semantik HTML5 ve CSS ile gelistirilen kisisel portfoy sitesinin ekran goruntusu" />
+                <p>Web Tasarımı ve Programlama dersi kapsamında geliştirilen erişilebilir (a11y) ve semantik web sayfası.</p>
             </article>
 
             <article>
-                <h3>Hangman Oyunu (C#)</h3>
-                <img src="hangman.jpg" alt="C# ile geliştirilmiş hangman oyunu ekran görüntüsü" />
-                <p>
-                    Türkiye'nin 81 ilinden rastgele seçim yapan,
-                    10 haklı şehir tahmin oyunu.
-                </p>
+                <h3>E-Ticaret İletişim Formu</h3>
+                <img src="form.jpg" alt="Doğrulama özelliklerine sahip erisilebilir iletisim formu tasarimi" />
+                <p>Kullanıcı dostu hata mesajları ve HTML5 doğrulama özellikleri barındıran erişilebilir form projesi.</p>
             </article>
         </section>
 
         <section id="iletisim">
-            <h2>İletişim</h2>
+            <h2>Iletisim</h2>
             <form action="#" method="POST" novalidate>
                 <fieldset>
-                    <legend>İletişim Formu</legend>
+                    <legend>Iletisim Formu</legend>
                     
                     <div class="form-group">
                         <label for="name">Ad Soyad:</label>
@@ -91,28 +74,28 @@
                     <div class="form-group">
                         <label for="subject">Konu:</label>
                         <select id="subject" name="subject" required aria-describedby="subject-error">
-                            <option value="">-- Seçiniz --</option>
-                            <option value="is">İş Teklifi</option>
+                            <option value="">-- Seciniz --</option>
+                            <option value="is">Is Teklifi</option>
                             <option value="soru">Soru</option>
-                            <option value="oneri">Öneri</option>
+                            <option value="oneri">Oneri</option>
                         </select>
                         <small id="subject-error" class="error-msg" role="alert"></small>
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Mesajınız:</label>
+                        <label for="message">Mesajiniz:</label>
                         <textarea id="message" name="message" rows="5" required minlength="10" aria-describedby="message-error"></textarea>
                         <small id="message-error" class="error-msg" role="alert"></small>
                     </div>
 
-                    <button type="submit">Gönder</button>
+                    <button type="submit">Gonder</button>
                 </fieldset>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Merve Özberk. Tüm hakları saklıdır.</p>
+        <p>&copy; 2026 Merve Özberk. Tum haklari saklidir.</p>
     </footer>
 
 </body>
