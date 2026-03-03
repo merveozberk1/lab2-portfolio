@@ -1,119 +1,153 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merve Özberk - Kişisel Portfolyo</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merve Özberk - Kişisel Portfolyo</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+<a href="#main-content" class="skip-link">Ana içeriğe atla</a>
 
-    <header>
-        <h1>Merve Özberk - Kişisel Portfolyo</h1>
-        <nav aria-label="Ana navigasyon">
-            <ul>
-                <li><a href="#hakkimda">Hakkımda</a></li>
-                <li><a href="#projeler">Projeler</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+<h1 class="site-title">Merve Özberk</h1>
+<nav aria-label="Ana navigasyon">
+<ul>
+<li><a href="#hakkimda">Hakkımda</a></li>
+<li><a href="#projeler">Projeler</a></li>
+<li><a href="#iletisim">İletişim</a></li>
+</ul>
+</nav>
+</header>
 
-    <main id="main-content">
-        
-        <section id="hakkimda">
-            <h2>Hakkımda</h2>
+<main id="main-content">
 
-            <figure>
-                <img src="profil.jpg" alt="Merve Özberk profil fotoğrafı" />
-                <figcaption>Merve Özberk</figcaption>
-            </figure>
+<section id="hakkimda">
+<h2>Hakkımda</h2>
+<div class="about-content">
+  <figure>
+  <img src="profil.jpg" alt="Merve Özberk profil fotoğrafı" />
+  </figure>
+  <div>
+    <p>
+    Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim.
+    Backend ve web geliştirme alanlarına ilgi duyuyorum.
+    Java, C# ve React ile projeler geliştiriyor; 
+    algoritma ve veri yapıları konularında kendimi geliştirmeye devam ediyorum.
+    </p>
+    <br>
+    <ul class="skill-tags" role="list" aria-label="Beceri etiketleri">
+    <li>Java</li>
+    <li>C#</li>
+    <li>React</li>
+    <li>HTML & CSS</li>
+    <li>Git & GitHub</li>
+    </ul>
+  </div>
+</div>
+</section>
 
-            <p>
-                Fırat Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim.
-                Backend ve web geliştirme alanlarına ilgi duyuyorum.
-                Java, C# ve React ile projeler geliştiriyor; 
-                algoritma ve veri yapıları konularında kendimi geliştirmeye devam ediyorum.
-            </p>
+<section id="projeler">
+<h2>Projelerim</h2>
+<div class="project-grid">
+  <article class="project-card">
+  <img src="filmproje.jpg" alt="Film ve dizi arşiv web uygulaması ekran görüntüsü" />
+  <h3>Film & Dizi Arşiv Web Uygulaması</h3>
+  <p>
+  Kullanıcıların film ve dizileri kategorize edebildiği,
+  ruh haline göre öneri sunan React tabanlı web projesi.
+  </p>
+  <ul class="skill-tags">
+    <li>React</li>
+    <li>CSS</li>
+  </ul>
+  </article>
 
-            <h3>Kullandığım Teknolojiler</h3>
-            <ul>
-                <li>Java</li>
-                <li>C#</li>
-                <li>React</li>
-                <li>HTML & CSS</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </section>
+  <article class="project-card">
+  <img src="hangman.jpg" alt="C# ile geliştirilmiş hangman oyunu ekran görüntüsü" />
+  <h3>Hangman Oyunu (C#)</h3>
+  <p>
+  Türkiye'nin 81 ilinden rastgele seçim yapan,
+  10 haklı şehir tahmin oyunu.
+  </p>
+  <ul class="skill-tags">
+    <li>C#</li>
+    <li>.NET</li>
+  </ul>
+  </article>
 
-        <section id="projeler">
-            <h2>Projelerim</h2>
+  <article class="project-card">
+  <img src="evse.jpg" alt="EVSE Security Lab projesi" />
+  <h3><a href="https://github.com/salihtore/EVSE-Security-Lab" target="_blank" style="color: inherit; text-decoration: underline;">EVSE Security Lab</a></h3>
+  <p>
+  Elektrikli araç şarj istasyonlarının (EVSE) siber güvenliği üzerine odaklandığımız grup laboratuvar çalışması.
+  </p>
+  <ul class="skill-tags">
+    <li>Siber Güvenlik</li>
+    <li>Ağ Analizi</li>
+  </ul>
+  </article>
 
-            <article>
-                <h3>Film & Dizi Arşiv Web Uygulaması</h3>
-                <img src="filmproje.jpg" alt="Film ve dizi arşiv web uygulaması ekran görüntüsü" />
-                <p>
-                    Kullanıcıların film ve dizileri kategorize edebildiği,
-                    ruh haline göre öneri sunan React tabanlı web projesi.
-                </p>
-            </article>
+  <article class="project-card">
+  <img src="mentormind.jpg" alt="MentorMind AI projesi" />
+  <h3>🤖 MentorMind AI</h3>
+  <p>
+  Etüt merkezleri için ders planlama ve öğrenci takibini dijitalleştiren sistem. Yazılım Gereksinimleri Analizi dokümanı hazırlayıp, sistem mimarisi ve kullanıcı senaryolarını oluşturdum. AI destekli eşleştirme fikri modellenerek SDLC süreçleri teoriden pratiğe döküldü. Bu çalışma, analitik düşünme ve sistem tasarlama becerimi önemli ölçüde geliştirdi.
+  </p>
+  <ul class="skill-tags">
+    <li>Sistem Analizi</li>
+    <li>SDLC</li>
+    <li>Yapay Zeka</li>
+  </ul>
+  </article>
+</div>
+</section>
 
-            <article>
-                <h3>Hangman Oyunu (C#)</h3>
-                <img src="hangman.jpg" alt="C# ile geliştirilmiş hangman oyunu ekran görüntüsü" />
-                <p>
-                    Türkiye'nin 81 ilinden rastgele seçim yapan,
-                    10 haklı şehir tahmin oyunu.
-                </p>
-            </article>
-        </section>
+<section id="iletisim">
+<h2>İletişim</h2>
+<form action="#" method="POST" novalidate>
+<fieldset>
+<legend>İletişim Formu</legend>
 
-        <section id="iletisim">
-            <h2>İletişim</h2>
-            <form action="#" method="POST" novalidate>
-                <fieldset>
-                    <legend>İletişim Formu</legend>
-                    
-                    <div class="form-group">
-                        <label for="name">Ad Soyad:</label>
-                        <input type="text" id="name" name="name" required minlength="2" aria-describedby="name-error" />
-                        <small id="name-error" class="error-msg" role="alert"></small>
-                    </div>
+<div class="form-group">
+<label for="name">Ad Soyad:</label>
+<input type="text" id="name" name="name" required minlength="2" aria-describedby="name-error" />
+<small id="name-error" class="error-msg" role="alert"></small>
+</div>
 
-                    <div class="form-group">
-                        <label for="email">E-posta:</label>
-                        <input type="email" id="email" name="email" required aria-describedby="email-error" />
-                        <small id="email-error" class="error-msg" role="alert"></small>
-                    </div>
+<div class="form-group">
+<label for="email">E-posta:</label>
+<input type="email" id="email" name="email" required aria-describedby="email-error" />
+<small id="email-error" class="error-msg" role="alert"></small>
+</div>
 
-                    <div class="form-group">
-                        <label for="subject">Konu:</label>
-                        <select id="subject" name="subject" required aria-describedby="subject-error">
-                            <option value="">-- Seçiniz --</option>
-                            <option value="is">İş Teklifi</option>
-                            <option value="soru">Soru</option>
-                            <option value="oneri">Öneri</option>
-                        </select>
-                        <small id="subject-error" class="error-msg" role="alert"></small>
-                    </div>
+<div class="form-group">
+<label for="subject">Konu:</label>
+<select id="subject" name="subject" required aria-describedby="subject-error">
+<option value="">-- Seçiniz --</option>
+<option value="is">İş Teklifi</option>
+<option value="soru">Soru</option>
+<option value="oneri">Öneri</option>
+</select>
+<small id="subject-error" class="error-msg" role="alert"></small>
+</div>
 
-                    <div class="form-group">
-                        <label for="message">Mesajınız:</label>
-                        <textarea id="message" name="message" rows="5" required minlength="10" aria-describedby="message-error"></textarea>
-                        <small id="message-error" class="error-msg" role="alert"></small>
-                    </div>
+<div class="form-group">
+<label for="message">Mesajınız:</label>
+<textarea id="message" name="message" rows="5" required minlength="10" aria-describedby="message-error"></textarea>
+<small id="message-error" class="error-msg" role="alert"></small>
+</div>
 
-                    <button type="submit">Gönder</button>
-                </fieldset>
-            </form>
-        </section>
-    </main>
+<button type="submit">Gönder</button>
+</fieldset>
+</form>
+</section>
+</main>
 
-    <footer>
-        <p>&copy; 2026 Merve Özberk. Tüm hakları saklıdır.</p>
-    </footer>
+<footer>
+<p>&copy; 2026 Merve Özberk. Tüm hakları saklıdır.</p>
+</footer>
 
 </body>
 </html>
